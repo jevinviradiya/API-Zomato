@@ -49,10 +49,15 @@ Packages
     2. cors
 
 
+Steps to upload your website on server (heroku)
+1. check
+        1. Your Database shoud be live
+        2. you must use
+            > process.env.PORT
+        3. in package.json you must have start command ( start (with > node file_name) and dev (with > nodemon file_name))
+            and run with (npm run dev)
 
-1. Your Database shoud be live
-2. you must use
-    > process.env.PORT
-    
-3. in package.json you must have start command ( start (with > node file_name) and dev (with > nodemon file_name))
-                                and run with (npm run dev)
+
+2. create repo
+    > push code
+    >
