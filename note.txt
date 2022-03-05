@@ -1,0 +1,58 @@
+install package
+    npm i dotenv
+    .env
+    it load environment variable automatically from .env file
+
+download mongodb
+    npm i mongodb
+
+
+mongo url is fixed for local :
+    "mongodb://localhost:27017" ==> and 27017 is the default
+                                     port number for local database
+
+
+find the data wrt(with respect to) location
+
+> db.zomato.find({state_id : 1}).pretty();  // or .pretty() is same as .toArray()
+> db.zomato.find({state_id : 1, cost:450}).pretty();
+
+
+find data at particular range
+> db.zomato.find({$and:[{cost:{$gt:300, $lt:500}}]}).pretty();
+
+if we want data in particular order
+> db.zomato.find({$and:[{cost:{$gt:300, $lt:500}}]}).sort({cost:1}).pretty();   // for assending order
+
+> db.zomato.find({$and:[{cost:{$gt:300, $lt:500}}]}).sort({cost:-1}).pretty();   // for decending order
+
+
+
+====================================================
+
+
+ two way to pass data
+
+    1. params   // request.params.state
+        > data pass after "/"
+        > need to define in route
+        > compulsory to pass
+
+    2. Query params
+        > data pass after
+        > no need to define in route
+        > not compulsory
+
+    
+Packages
+    1. body-parser
+    2. cors
+
+
+
+1. Your Database shoud be live
+2. you must use
+    > process.env.PORT
+    
+3. in package.json you must have start command ( start (with > node file_name) and dev (with > nodemon file_name))
+                                and run with (npm run dev)
