@@ -61,11 +61,3 @@ Steps to upload your website on server (heroku)
 2. create repo
     > push code
     >
-
-
-add github new files and chamges
-and now we will ne continued
-
-
-and how to change the files
-and last is change without any
